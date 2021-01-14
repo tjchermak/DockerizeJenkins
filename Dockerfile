@@ -24,7 +24,7 @@ COPY --from=0 /app/src/public/static/bower_components/ /app/src/public/static/bo
 
 COPY package.json /app/
 RUN npm install
-# --only=production make small change
+# --only=production make small change to upload to Github
 
 COPY src /app/src
 
